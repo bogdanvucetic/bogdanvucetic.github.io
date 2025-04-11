@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Elementary Cellular Automata Simulator</title>
+    <title>Elementary Cellular Automaton Simulator</title>
     <style>
       body {
         margin: 0;
@@ -188,7 +188,7 @@
         border-radius: 15px;
       }
       
-      #automata-canvas {
+      #automaton-canvas {
         width: 1000px;
         height: 1000px;
         background-color: #fafafa;
@@ -222,7 +222,7 @@
   </head>
   <body>
     <header>
-      <h1>Elementary Cellular Automata Simulator</h1>
+      <h1>Elementary Cellular Automaton Simulator</h1>
     </header>
     <div id="app-container">
       <nav id="sidebar">
@@ -363,17 +363,18 @@
           <h3>What's going on?</h3>
           <p>
             A small <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html">elementary cellular 
-            automata</a> simulator I built with Rust and WebAssembly. I wanted an introductory project to Rust, and this seemed a
+            automaton</a> simulator I built with Rust and WebAssembly. I wanted an introductory project to Rust, and this seemed a
             bit more fun and useful than a CLI to-do app. Using Rust makes it quite a bit faster than what you'd otherwise get.
           </p>
         </div>
         <div>
           <h3>How to use?</h3>
           <p>
-            If you're already familiar with elementary cellular automata, you can jump right in: select or create a rule, 
-            pick a starting condition, set the grid size, and press Generate to see how the cells evolve. Otherwise, 
-            <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html">Wolfram Mathworld</a> 
-            provides a nice introduction.
+            If you're already familiar with elementary cellular automaton, you can jump right in: select or create a rule, 
+            pick a starting condition, set the grid size, and press Generate to see how the cells evolve. <b>Scroll down
+            to see the generation if you're on mobile</b>. Otherwise, 
+            <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html">Wolfram Mathworld</a> provides a nice 
+            introduction.
           </p>
           <h3>Acknowledgements</h3>
           <p>
@@ -390,7 +391,7 @@
         </div>
       </nav>
       <div id="display-area">
-        <canvas id="automata-canvas"></canvas>
+        <canvas id="automaton-canvas"></canvas>
       </div>
     </div>
     <script src="./bootstrap.js"></script>
