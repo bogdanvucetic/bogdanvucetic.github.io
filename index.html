@@ -14,7 +14,8 @@
       }
       
       header {
-        width: 600px;
+        width: 90%;
+        max-width: 600px;
         margin: 20px auto;
         padding: 10px;
         text-align: center;
@@ -34,6 +35,7 @@
         display: flex;
         margin: auto;
         justify-content: center;
+        max-width: 1400px;
       }
       
       #sidebar {
@@ -191,6 +193,30 @@
         height: 1000px;
         background-color: #fafafa;
         border: 2px solid #e0e0e0;
+      }
+
+      @media (max-width: 600px) {
+        /* Stack sidebar and display area vertically */
+        #app-container {
+          flex-direction: column;
+          align-items: center;
+          padding: 0px;
+        }
+        #sidebar {
+          width: 80%;
+        }
+        #display-area {
+          width: 80%;
+          overflow: scroll;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+        }
+        /* Optionally, reduce font sizes */
+        p,
+        .input-row label {
+          font-size: 10px;
+        }
       }
     </style>
   </head>
